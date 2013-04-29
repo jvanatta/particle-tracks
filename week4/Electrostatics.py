@@ -1,6 +1,6 @@
 import numpy as np
 from numpy import *
-k = 8.987551787368176E-9
+k = 8.987551787368176E9
 
 def pointPotential(x, y, q, posx, posy):
     """
