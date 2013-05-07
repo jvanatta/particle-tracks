@@ -31,3 +31,14 @@ def dipolePotential(x, y, q, d, rot):
     xrot = d*sin(rot)
     yrot = d*cos(rot)
     return pointPotential(x, y, q, xrot, yrot) - pointPotential(x, y, q, -xrot, -yrot)
+
+
+def pointField(x, y, q, Xq, Yq):
+    """
+    calculates the potential field at a point or over an array due to a point particle
+    in: float(s) x and y, the values to calculate the potential on
+       float q, the signed magnitude of the charge
+       float Xq and Yq, the location of the point charge
+    out: tuple of the field components
+    """
+    return ((k*q)*(x-Xq) / (((x-Xq)**2 + (y-Yq)**2))**.5), ((k*q)*(y-Yq) / (((x-Xq)**2 + (y-Yq)**2))**.5)
