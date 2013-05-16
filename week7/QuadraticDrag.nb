@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[    101946,       1874]
-NotebookOptionsPosition[    101159,       1844]
-NotebookOutlinePosition[    101512,       1860]
-CellTagsIndexPosition[    101469,       1857]
+NotebookDataLength[    102395,       1885]
+NotebookOptionsPosition[    101567,       1854]
+NotebookOutlinePosition[    101920,       1870]
+CellTagsIndexPosition[    101877,       1867]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1645,8 +1645,11 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"vt", " ", "=", " ", "50"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"x", "=."}], "\[IndentingNewLine]", 
+ RowBox[{"y", " ", "=."}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"y", " ", "=."}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"g", " ", "=", " ", "9.81"}], " ", ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ans", " ", "=", " ", 
    RowBox[{"NDSolve", "[", 
@@ -1697,26 +1700,34 @@ Cell[BoxData[{
                  RowBox[{"y", "'"}], "[", "t", "]"}], "^", "2"}]}], "]"}]}], 
             ")"}]}], ")"}]}]}], ",", " ", 
        RowBox[{
-        RowBox[{"x", "[", "0", "]"}], "==", 
-        RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0"}], ",", " ", 
-       RowBox[{
         RowBox[{
          RowBox[{"x", "'"}], "[", "0", "]"}], " ", "=", " ", "20"}], ",", " ", 
        RowBox[{
         RowBox[{
-         RowBox[{"y", "'"}], "[", "0", "]"}], " ", "=", " ", "20"}]}], "}"}], 
-     ",", 
+         RowBox[{"y", "'"}], "[", "0", "]"}], "\[Equal]", " ", "20"}], ",", 
+       " ", 
+       RowBox[{
+        RowBox[{"x", "[", "0", "]"}], " ", "=", " ", 
+        RowBox[{
+         RowBox[{"y", "[", "0", "]"}], " ", "=", " ", "0"}]}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"x", ",", "y"}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"t", ",", "0", ",", "200"}], "}"}]}], "]"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.577725190912305*^9, 3.5777253096258497`*^9}, {
-   3.577725364191948*^9, 3.57772552605201*^9}, {3.577725579691412*^9, 
-   3.5777255835774813`*^9}, {3.577725640759201*^9, 3.577725661128867*^9}, {
-   3.577725726255453*^9, 3.577725730002653*^9}, {3.577725786545808*^9, 
-   3.5777257867915792`*^9}, {3.577725884829226*^9, 3.577725888866584*^9}, {
-   3.577725934492074*^9, 3.577725936034137*^9}, 3.577726582402776*^9}],
+  3.577725364191948*^9, 3.57772552605201*^9}, {3.577725579691412*^9, 
+  3.5777255835774813`*^9}, {3.577725640759201*^9, 3.577725661128867*^9}, {
+  3.577725726255453*^9, 3.577725730002653*^9}, {3.577725786545808*^9, 
+  3.5777257867915792`*^9}, {3.577725884829226*^9, 3.577725888866584*^9}, {
+  3.577725934492074*^9, 3.577725936034137*^9}, {3.577726582402776*^9, 
+  3.5777266485075417`*^9}, {3.5777267735828857`*^9, 3.577726781987876*^9}}],
+
+Cell[BoxData["9.81`"], "Output",
+ CellChangeTimes->{{3.577725592766611*^9, 3.577725606376439*^9}, 
+   3.577725661914048*^9, 3.57772574066638*^9, 3.577725798467325*^9, 
+   3.5777258892231827`*^9, 3.577725956160557*^9, 3.577726649293686*^9, 
+   3.577726777265984*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1724,30 +1735,31 @@ Cell[BoxData[
    RowBox[{"NDSolve", "::", "deqn"}], "MessageName"], 
   RowBox[{
   ":", " "}], "\<\"Equation or list of equations expected instead of \
-\[NoBreak]\\!\\(0\\)\[NoBreak] in the first argument \
-\[NoBreak]\\!\\({\\(\\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\
-\[Prime]\\\", Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \
-\\(\\(-\\(\\(\\(g\\\\ \\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\\\
-\", Rule[MultilineFunction, None]]\\)\\)[t]\\)\\)\\\\ \
+\[NoBreak]\\!\\(20\\)\[NoBreak] in the first argument \[NoBreak]\\!\\({\\(\\(\
+\\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\[Prime]\\\", \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \\(\\(\\(\\(-0.003924`\
+\\)\\)\\\\ \\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\\\", \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\)\\\\ \
 \\@\\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\\\", \
 Rule[MultilineFunction, None]]\\)\\)[t]\\)\\^2 + \
 \\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\\\", \
-Rule[MultilineFunction, \
-None]]\\)\\)[t]\\)\\^2\\)\\)\\/2500\\)\\)\\)\\)\\)\\), \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\^2\\)\\)\\)\\)\\), \
 \\(\\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\[Prime]\\\", \
-Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \\(\\(\\(\\(-g\\)\\)\\\
-\\ \\(\\((1 + \\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\\\", \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \
+\\(\\(\\(\\(-9.81`\\)\\)\\\\ \\(\\((1 + \
+\\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\\\", \
 Rule[MultilineFunction, None]]\\)\\)[t]\\)\\)\\\\ \\@\\(\\(\\(Power[\\(\\(\
 \[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\) + \\(\\(Power[\\(\\(\
 \[LeftSkeleton] 2 \
-\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/2500)\\)\\)\\)\\)\\)\\), 0, \
-\\(\\(\\(\\(y[0]\\)\\) \[Equal] 0\\)\\), 20, 0}\\)\[NoBreak]. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NDSolve/deqn\\\", \
-ButtonNote -> \\\"NDSolve::deqn\\\"]\\)\"\>"}]], "Message", "MSG",
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/2500)\\)\\)\\)\\)\\)\\), 20, True, \
+0}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\
+\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NDSolve/deqn\\\", ButtonNote -> \
+\\\"NDSolve::deqn\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{{3.5777255928702*^9, 3.577725606380804*^9}, 
    3.5777256619190493`*^9, 3.577725740670374*^9, 3.577725798460353*^9, 
-   3.577725889216473*^9, 3.577725956153689*^9}],
+   3.577725889216473*^9, 3.577725956153689*^9, 3.577726649286909*^9, 
+   3.577726777268347*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1755,30 +1767,31 @@ Cell[BoxData[
    RowBox[{"NDSolve", "::", "deqn"}], "MessageName"], 
   RowBox[{
   ":", " "}], "\<\"Equation or list of equations expected instead of \
-\[NoBreak]\\!\\(0\\)\[NoBreak] in the first argument \
-\[NoBreak]\\!\\({\\(\\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\
-\[Prime]\\\", Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \
-\\(\\(-\\(\\(\\(g\\\\ \\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\\\
-\", Rule[MultilineFunction, None]]\\)\\)[t]\\)\\)\\\\ \
+\[NoBreak]\\!\\(20\\)\[NoBreak] in the first argument \[NoBreak]\\!\\({\\(\\(\
+\\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\[Prime]\\\", \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \\(\\(\\(\\(-0.003924`\
+\\)\\)\\\\ \\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\\\", \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\)\\\\ \
 \\@\\(\\(\\(\\(\\*SuperscriptBox[\\\"x\\\", \\\"\[Prime]\\\", \
 Rule[MultilineFunction, None]]\\)\\)[t]\\)\\^2 + \
 \\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\\\", \
-Rule[MultilineFunction, \
-None]]\\)\\)[t]\\)\\^2\\)\\)\\/2500\\)\\)\\)\\)\\)\\), \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\^2\\)\\)\\)\\)\\), \
 \\(\\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\[Prime]\\\", \
-Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \\(\\(\\(\\(-g\\)\\)\\\
-\\ \\(\\((1 + \\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\\\", \
+Rule[MultilineFunction, None]]\\)\\)[t]\\)\\) \[Equal] \
+\\(\\(\\(\\(-9.81`\\)\\)\\\\ \\(\\((1 + \
+\\(\\(\\(\\(\\(\\*SuperscriptBox[\\\"y\\\", \\\"\[Prime]\\\", \
 Rule[MultilineFunction, None]]\\)\\)[t]\\)\\)\\\\ \\@\\(\\(\\(Power[\\(\\(\
 \[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\) + \\(\\(Power[\\(\\(\
 \[LeftSkeleton] 2 \
-\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/2500)\\)\\)\\)\\)\\)\\), 0, \
-\\(\\(\\(\\(y[0]\\)\\) \[Equal] 0\\)\\), 20, 0}\\)\[NoBreak]. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NDSolve/deqn\\\", \
-ButtonNote -> \\\"NDSolve::deqn\\\"]\\)\"\>"}]], "Message", "MSG",
+\[RightSkeleton]\\)\\)]\\)\\)\\)\\)\\/2500)\\)\\)\\)\\)\\)\\), 20, True, \
+0}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\
+\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NDSolve/deqn\\\", ButtonNote -> \
+\\\"NDSolve::deqn\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{{3.5777255928702*^9, 3.577725606380804*^9}, 
    3.5777256619190493`*^9, 3.577725740670374*^9, 3.577725798460353*^9, 
-   3.577725889216473*^9, 3.5777259561574373`*^9}],
+   3.577725889216473*^9, 3.577725956153689*^9, 3.577726649286909*^9, 
+   3.577726777272917*^9}],
 
 Cell[BoxData[
  RowBox[{"NDSolve", "[", 
@@ -1789,29 +1802,27 @@ Cell[BoxData[
       RowBox[{
        SuperscriptBox["x", "\[Prime]\[Prime]",
         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
-      RowBox[{"-", 
-       FractionBox[
-        RowBox[{"g", " ", 
-         RowBox[{
-          SuperscriptBox["x", "\[Prime]",
-           MultilineFunction->None], "[", "t", "]"}], " ", 
-         SqrtBox[
+      RowBox[{
+       RowBox[{"-", "0.003924`"}], " ", 
+       RowBox[{
+        SuperscriptBox["x", "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], " ", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
           RowBox[{
-           SuperscriptBox[
-            RowBox[{
-             SuperscriptBox["x", "\[Prime]",
-              MultilineFunction->None], "[", "t", "]"}], "2"], "+", 
-           SuperscriptBox[
-            RowBox[{
-             SuperscriptBox["y", "\[Prime]",
-              MultilineFunction->None], "[", "t", "]"}], "2"]}]]}], 
-        "2500"]}]}], ",", 
+           SuperscriptBox["x", "\[Prime]",
+            MultilineFunction->None], "[", "t", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{
+           SuperscriptBox["y", "\[Prime]",
+            MultilineFunction->None], "[", "t", "]"}], "2"]}]]}]}], ",", 
      RowBox[{
       RowBox[{
        SuperscriptBox["y", "\[Prime]\[Prime]",
         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
       RowBox[{
-       RowBox[{"-", "g"}], " ", 
+       RowBox[{"-", "9.81`"}], " ", 
        RowBox[{"(", 
         RowBox[{"1", "+", 
          FractionBox[
@@ -1829,17 +1840,16 @@ Cell[BoxData[
               RowBox[{
                SuperscriptBox["y", "\[Prime]",
                 MultilineFunction->None], "[", "t", "]"}], "2"]}]]}], 
-          "2500"]}], ")"}]}]}], ",", "0", ",", 
-     RowBox[{
-      RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0"}], ",", "20", ",", "0"}], 
-    "}"}], ",", 
+          "2500"]}], ")"}]}]}], ",", "20", ",", "True", ",", "0"}], "}"}], 
+   ",", 
    RowBox[{"{", 
     RowBox[{"x", ",", "y"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"t", ",", "0", ",", "200"}], "}"}]}], "]"}]], "Output",
  CellChangeTimes->{{3.577725592766611*^9, 3.577725606376439*^9}, 
    3.577725661914048*^9, 3.57772574066638*^9, 3.577725798467325*^9, 
-   3.5777258892231827`*^9, 3.577725956160557*^9}]
+   3.5777258892231827`*^9, 3.577725956160557*^9, 3.577726649293686*^9, 
+   3.5777267772760353`*^9}]
 }, Open  ]]
 },
 WindowSize->{799, 739},
@@ -1871,10 +1881,11 @@ Cell[84877, 1457, 4320, 109, 196, "Input"],
 Cell[89200, 1568, 3658, 70, 461, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[92895, 1643, 2779, 75, 148, "Input"],
-Cell[95677, 1720, 1696, 29, 71, "Message"],
-Cell[97376, 1751, 1698, 29, 71, "Message"],
-Cell[99077, 1782, 2066, 59, 92, "Output"]
+Cell[92895, 1643, 2977, 80, 163, "Input"],
+Cell[95875, 1725, 265, 4, 27, "Output"],
+Cell[96143, 1731, 1706, 30, 68, "Message"],
+Cell[97852, 1763, 1706, 30, 68, "Message"],
+Cell[99561, 1795, 1990, 56, 96, "Output"]
 }, Open  ]]
 }
 ]
