@@ -8,7 +8,7 @@ function [ m, b, sigm, sigb ] = WeightedLSQFit( xdata, ydata, wdata)
 %    non-weighted least squares equations.
     n = size(xdata);
 
-    if 1 == 2
+    if xdata == ones(n)
         x = sum(xdata)./n;
         y = sum(ydata)./n;
         xx = sum(xdata.^2)./n;
