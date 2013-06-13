@@ -12,5 +12,5 @@ Or 3dtracks_standalone.py for source code.
 
 
 I pledge on my honor that I have not given or received any unauthorized assistance on this assignment/examination.
-Signed: <John Van Atta> Dated: <13Jun13>
+Signed: John Van Atta Dated: 13 Jun 13
 
