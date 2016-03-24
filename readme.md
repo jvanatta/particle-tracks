@@ -1,16 +1,12 @@
-3-D Trajectory Generation in Hexagonal Geometry
+3-D Particle Trajectory Generation in Hexagonal Geometry
 ----
 John Van Atta
-13 June 2013
+June 2013
 
 Groups discrete data events into directional trajectories in a 3-D space.
 Based on  Neutron Induced Fission Fragment Tracking Experiment (NIFFTE)
 time projection chamber data.
 
-Load 3dtracks.ipynb for detailed instructions and sample output
-Or 3dtracks_standalone.py for source code.
+Much more detailed information is in 3dtracks.ipynb. Github will natively run the file so give it a click.
 
-
-I pledge on my honor that I have not given or received any unauthorized assistance on this assignment/examination.
-Signed: John Van Atta Dated: 13 Jun 13
-
+Or see 3dtracks_standalone.py for source code of a standalone python version without the ipython wrapping.
