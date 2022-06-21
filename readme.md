@@ -3,7 +3,7 @@
 John Van Atta
 June 2013
 
-Editor, 2022: How far I've come. This is a great project but the code sure does look amateurish now.
+*Editor, 2022: How far I've come. This is a great project but the code sure does look amateurish now.*
 
 Groups discrete data events into directional trajectories in a 3-D hexagonal space.
 Based on Neutron Induced Fission Fragment Tracking Experiment (NIFFTE) time projection chamber data.
